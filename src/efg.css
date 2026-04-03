@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
+@font-face {
+  font-family: "Modern Negra";
+  src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
+}
+
+/* Theme variables */
+:root {
+  --color-yellow: #e7d393;
+  --color-white-100: #efefef;
+  --font-sans: "Mona Sans", sans-serif;
+  --font-modern-negra: "Modern Negra", sans-serif;
+  --font-serif: "DM Serif Text", serif;
+}
+
+/* Global styles */
+html,
+body {
+  width: 100%;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Utilities (converted manually) */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-gradient {
+  background: linear-gradient(to bottom, #ffffff, #898989);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.radial-gradient {
+  background: radial-gradient(
+    circle at center,
+    #434343 0%,
+    #000 50%,
+    transparent 100%
+  );
+}
+
+.masked-img {
+  mask-image: url("/images/mask-img.png");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 50%;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+}
+
+nav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+nav p {
+  font-family: var(--font-modern-negra);
+  font-size: 30px;
+  margin-bottom: -8px;
+}
+
+nav a {
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+/* HERO */
+#hero {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#hero h1 {
+  margin-top: 160px;
+  font-size: 80px;
+  text-align: center;
+  font-family: var(--font-modern-negra);
+}
+
+/* NOISY BG */
+.noisy {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/noise.png");
+}
+
+/* VIDEO */
+video {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/* SECTION EXAMPLE */
+#about {
+  min-height: 100vh;
+  padding: 100px 20px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  font-size: 48px;
+  font-family: var(--font-modern-negra);
+}
+
+#about p {
+  font-size: 18px;
+}
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  border-radius: 999px;
+  background: white;
+  color: black;
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* IMAGE GRID */
+.top-grid,
+.bottom-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.top-grid div,
+.bottom-grid div {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 280px;
+}
+
+.top-grid img,
+.bottom-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
