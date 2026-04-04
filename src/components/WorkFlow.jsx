@@ -21,7 +21,7 @@ export default function WorkFlow() {
         <h2 className="h2 text-text">AddLife Work Flow</h2>
       </div>
 
-      {/* Tabs + Arrows - same pattern as CoatingsSection header */}
+      {/* Tabs + Arrows */}
       <div className="flex items-center justify-between mb-6 border-b border-base">
         {/* Tabs */}
         <div className="flex">
@@ -47,7 +47,7 @@ export default function WorkFlow() {
           ))}
         </div>
 
-        {/* Arrows - same as CoatingsSection */}
+        {/* Arrows */}
         <div className="flex gap-3 mb-1">
           <button
             onClick={scrollLeft}
@@ -64,7 +64,7 @@ export default function WorkFlow() {
         </div>
       </div>
 
-      {/* Scrollable Cards - identical to CoatingsSection */}
+      {/* Scrollable Cards */}
       <div
         ref={scrollRef}
         className="flex gap-6 overflow-x-auto scroll-smooth pb-4"
@@ -73,7 +73,8 @@ export default function WorkFlow() {
         {workFlow[active].steps.map((step) => (
           <div
             key={step.id}
-            className="min-w-[280px] bg-card rounded-2xl overflow-hidden border border-base flex-shrink-0"
+            style={{ width: "280px", minWidth: "280px", maxWidth: "280px" }}
+            className="bg-card rounded-2xl overflow-hidden border border-base flex-shrink-0"
           >
             {/* Orange Header */}
             <div className="bg-primary px-4 py-3">
@@ -98,7 +99,9 @@ export default function WorkFlow() {
             {/* Text */}
             <div className="p-4">
               <h3 className="font-bold text-text text-sm mb-1">{step.title}</h3>
-              <p className="text-muted text-xs">{step.description}</p>
+              <p className="text-muted text-xs line-clamp-2">
+                {step.description}
+              </p>
             </div>
           </div>
         ))}
