@@ -14,7 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="dark bg-surface text-text border-b border-base">
+    <nav className="dark bg-surface text-text border-b border-base ">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-14 px-6">
         {/* LOGO */}
         <Link to="/" onClick={() => window.scrollTo(0, 0)}>

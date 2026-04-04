@@ -21,7 +21,7 @@ const contacts = [
 
 export default function Topbar() {
   return (
-    <div className="hidden md:flex  dark bg-background border-b border-base">
+    <div className="hidden md:flex dark bg-background border-b border-base ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-end h-14">
           {/* Contact Items */}

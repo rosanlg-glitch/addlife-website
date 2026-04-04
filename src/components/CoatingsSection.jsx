@@ -22,13 +22,13 @@ export default function CoatingsSection() {
         <div className="flex gap-3">
           <button
             onClick={scrollLeft}
-            className="w-10 h-10 rounded-full border border-base flex items-center justify-center hover:bg-gray-100 transition"
+            className="w-10 h-10 rounded-full border border-base flex items-center justify-center hover:bg-[#FFA300] transition"
           >
             ‹
           </button>
           <button
             onClick={scrollRight}
-            className="w-10 h-10 rounded-full border border-base flex items-center justify-center hover:bg-gray-100 transition"
+            className="w-10 h-10 rounded-full border border-base flex items-center justify-center hover:bg-[#FFA300] transition"
           >
             ›
           </button>

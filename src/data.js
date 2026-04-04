@@ -65,52 +65,52 @@ export const whatWeDo = [
 export const coatings = [
   {
     id: 1,
-    label: "PVD Coating",
-    title: "High performance coating for cutting tools.",
-    description: "Ideal for ferrous materials with superior hardness.",
+    label: "FerroCon®",
+    title: "TiAIN-based",
+    description: "For unalloyed, alloyed and high-speed",
     image: "/coatings/pvd.jpg",
   },
   {
     id: 2,
-    label: "HiPIMS Coating",
-    title: "Next generation HiPIMS technology.",
-    description: "Ultra dense coating with exceptional adhesion.",
-    image: "/coatings/hipims.jpg",
+    label: "FerroCon®",
+    title: "TiAIN-based",
+    description: "For unalloyed, alloyed and high-speed",
+    image: "/coatings/pvd.jpg",
   },
   {
     id: 3,
-    label: "TiN Coating",
-    title: "Titanium Nitride for general purpose tools.",
-    description: "Gold colored coating for wear resistance.",
-    image: "/coatings/tin.jpg",
+    label: "FerroCon®",
+    title: "TiAIN-based",
+    description: "For unalloyed, alloyed and high-speed",
+    image: "/coatings/pvd.jpg",
   },
   {
     id: 4,
-    label: "TiAlN Coating",
-    title: "High temperature resistant coating.",
-    description: "Best for dry machining and high speed cutting.",
-    image: "/coatings/tialn.jpg",
+    label: "FerroCon®",
+    title: "TiAIN-based",
+    description: "For unalloyed, alloyed and high-speed",
+    image: "/coatings/pvd.jpg",
   },
   {
     id: 5,
-    label: "CrN Coating",
-    title: "Chromium Nitride for corrosion resistance.",
-    description: "Excellent for forming and moulding tools.",
-    image: "/coatings/crn.jpg",
+    label: "FerroCon®",
+    title: "TiAIN-based",
+    description: "For unalloyed, alloyed and high-speed",
+    image: "/coatings/pvd.jpg",
   },
   {
     id: 6,
-    label: "DLC Coating",
-    title: "Diamond Like Carbon coating.",
-    description: "Extremely low friction for non-ferrous materials.",
-    image: "/coatings/dlc.jpg",
+    label: "FerroCon®",
+    title: "TiAIN-based",
+    description: "For unalloyed, alloyed and high-speed",
+    image: "/coatings/pvd.jpg",
   },
   {
     id: 7,
-    label: "AlTiN Coating",
-    title: "Aluminium Titanium Nitride coating.",
-    description: "High oxidation resistance for hard machining.",
-    image: "/coatings/altin.jpg",
+    label: "FerroCon®",
+    title: "TiAIN-based",
+    description: "For unalloyed, alloyed and high-speed",
+    image: "/coatings/pvd.jpg",
   },
 ];
 export const industries = [
@@ -290,4 +290,96 @@ export const workFlow = [
       },
     ],
   },
+];
+export const blogs = [
+  {
+    id: 1,
+    title: "Lorem Ipsum",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
+    image: "/blogs/blog1.jpg",
+    path: "/blog/1",
+  },
+  {
+    id: 2,
+    title: "Lorem Ipsum",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
+    image: "/blogs/blog2.jpg",
+    path: "/blog/2",
+  },
+  {
+    id: 3,
+    title: "Lorem Ipsum",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
+    image: "/blogs/blog3.jpg",
+    path: "/blog/3",
+  },
+  {
+    id: 4,
+    title: "Lorem Ipsum",
+    description:
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
+    image: "/blogs/blog4.jpg",
+    path: "/blog/4",
+  },
+];
+export const reviews = [
+  {
+    id: 1,
+    title: "The Lorem ipsum dolor",
+    description:
+      "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    name: "ABC Name",
+    company: "ABC Company",
+    avatar: "A",
+  },
+  {
+    id: 2,
+    title: "The Lorem ipsum dolor",
+    description:
+      "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    name: "ABC Name",
+    company: "ABC Company",
+    avatar: "A",
+  },
+  {
+    id: 3,
+    title: "The Lorem ipsum dolor",
+    description:
+      "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    name: "ABC Name",
+    company: "ABC Company",
+    avatar: "A",
+  },
+  {
+    id: 4,
+    title: "The Lorem ipsum dolor",
+    description: "The Lorem ipsum dolor sit amet.",
+    name: "ABC Name",
+    company: "ABC Company",
+    avatar: "A",
+  },
+  {
+    id: 5,
+    title: "The Lorem ipsum dolor",
+    description: "The Lorem ipsum dolor sit amet.",
+    name: "ABC Name",
+    company: "ABC Company",
+    avatar: "A",
+  },
+];
+
+export const clientLogos = [
+  { id: 1, image: "/clients/logo1.png", alt: "Client 1" },
+  { id: 2, image: "/clients/logo2.png", alt: "Client 2" },
+  { id: 3, image: "/clients/logo3.png", alt: "Client 3" },
+  { id: 4, image: "/clients/logo4.png", alt: "Client 4" },
+  { id: 5, image: "/clients/logo5.png", alt: "Client 5" },
+  { id: 6, image: "/clients/logo6.png", alt: "Client 6" },
+  { id: 7, image: "/clients/logo7.png", alt: "Client 7" },
+  { id: 8, image: "/clients/logo8.png", alt: "Client 8" },
+  { id: 9, image: "/clients/logo9.png", alt: "Client 9" },
+  { id: 10, image: "/clients/logo10.png", alt: "Client 10" },
 ];

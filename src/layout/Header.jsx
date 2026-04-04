@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <div className=" sticky top-0 z-50">
+    <div className="fixed top-0 left-0 w-full z-50 dark bg-surface">
       <Topbar />
       <Navbar />
     </div>

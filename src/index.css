@@ -194,6 +194,7 @@
   }
   .ph {
     font-size: var(--text-lg);
+    color: var(--color-primary);
     margin-bottom: 6px;
     text-transform: uppercase;
   }

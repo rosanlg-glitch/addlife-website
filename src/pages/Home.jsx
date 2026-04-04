@@ -6,14 +6,18 @@ import IndustriesSection from "../components/IndustriesSection";
 import WhyAddlife from "../components/WhyAddlife";
 import HipimsTech from "../components/HipimsTech";
 import WorkFlow from "../components/WorkFLow";
+import BlogSection from "../components/BlogsSection";
+import ReviewSection from "../components/ReviewSection";
+import ContactUs from "../components/ContactUs";
+import Footer from "../layout/Footer";
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <div className="dark bg-surface min-h-[90vh]">
-        <div className="max-w-7xl mx-auto py-20 flex items-center gap-10">
-          <div className="flex-1 px-10">
+      <div className="dark bg-surface min-h-[90vh] items-center ">
+        <div className="max-w-7xl mx-auto py-20 pt-40 flex items-center justify-center gap-10">
+          <div className="flex-1 px-10 ">
             <h1 className="text-white text-4xl font-bold leading-snug">
               HiPIMS
               <span className="block">Coating Technology</span>
@@ -21,7 +25,7 @@ export default function Home() {
                 Now In India!
               </span>
             </h1>
-            <p className="text-muted mt-4 mb-6 max-w-sm text-sm">
+            <p className="text-muted mt-4 mb-6 max-w-auto text-sm">
               We maintain this reputation by ensuring that all essential
               equipment has redundancies in event of unforeseeable & unavoidable
               machine stoppage which translates to minimal downtime and best in
@@ -64,6 +68,18 @@ export default function Home() {
 
       {/* WorkFlow */}
       <WorkFlow />
+
+      {/* Blogs */}
+      <BlogSection />
+
+      {/* Reviews */}
+      <ReviewSection />
+
+      {/* Contact Us */}
+      <ContactUs />
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 }
