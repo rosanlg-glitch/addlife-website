@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { workFlow } from "../data";
 
-export default function WorkFlow() {
+export default function OurProcess() {
   const [active, setActive] = useState(0);
   const scrollRef = useRef(null);
 
@@ -31,7 +31,7 @@ export default function WorkFlow() {
         <h2 className="h2 text-text">AddLife Work Flow</h2>
       </div>
 
-      {/* Tabs (Scrollable on mobile) */}
+      {/* Tabs */}
       <div className="mb-6 border-b border-base overflow-x-auto no-scrollbar">
         <div className="flex w-max min-w-full">
           {workFlow.map((tab, index) => (
@@ -63,6 +63,7 @@ export default function WorkFlow() {
           flex gap-4 md:gap-6 overflow-x-auto pb-4
           snap-x snap-mandatory
           no-scrollbar
+          cursor-grab active:cursor-grabbing
         "
       >
         {workFlow[active].steps.map((step) => (
@@ -105,7 +106,7 @@ export default function WorkFlow() {
         ))}
       </div>
 
-      {/* Arrows (bottom for mobile) */}
+      {/* Arrows */}
       <div className="flex justify-center md:justify-end gap-3 mt-4">
         <button
           onClick={scrollLeft}

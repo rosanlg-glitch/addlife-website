@@ -15,20 +15,6 @@ export default function CoatingsSection() {
         <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-text max-w-xs">
           Our Coating Types
         </h2>
-        <div className="flex gap-3">
-          <button
-            onClick={scrollLeft}
-            className="w-10 h-10 rounded-full border border-base flex items-center justify-center hover:bg-primary transition"
-          >
-            ‹
-          </button>
-          <button
-            onClick={scrollRight}
-            className="w-10 h-10 rounded-full border border-base flex items-center justify-center hover:bg-primary transition"
-          >
-            ›
-          </button>
-        </div>
       </div>
 
       <div
@@ -61,6 +47,20 @@ export default function CoatingsSection() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-end gap-3 mt-8">
+        <button
+          onClick={scrollLeft}
+          className="w-10 h-10 rounded-full border border-base flex items-center justify-center hover:bg-primary transition"
+        >
+          ‹
+        </button>
+        <button
+          onClick={scrollRight}
+          className="w-10 h-10 rounded-full border border-base flex items-center justify-center hover:bg-primary transition"
+        >
+          ›
+        </button>
       </div>
     </div>
   );

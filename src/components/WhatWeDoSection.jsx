@@ -16,7 +16,7 @@ export default function WhatWeDoSection() {
 
         {/* Tabs - scrollable on mobile */}
         <div
-          className="flex overflow-x-auto border-b border-gray-500 mb-8"
+          className="flex overflow-x-auto justify-between border-b border-gray-500 mb-8"
           style={{ scrollbarWidth: "none" }}
         >
           {whatWeDo.map((tab, index) => (

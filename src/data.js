@@ -268,6 +268,20 @@ export const workFlow = [
         description:
           "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       },
+      {
+        id: 4,
+        number: "03",
+        title: "Coating Step Three",
+        description:
+          "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 5,
+        number: "03",
+        title: "Coating Step Three",
+        description:
+          "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
     ],
   },
   {
@@ -283,6 +297,27 @@ export const workFlow = [
       },
       {
         id: 2,
+        number: "02",
+        title: "Post Treatment Two",
+        description:
+          "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 3,
+        number: "02",
+        title: "Post Treatment Two",
+        description:
+          "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 4,
+        number: "02",
+        title: "Post Treatment Two",
+        description:
+          "The Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 5,
         number: "02",
         title: "Post Treatment Two",
         description:
