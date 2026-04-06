@@ -7,34 +7,21 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  {
-    label: "LinkedIn",
-    icon: "/linkedin.png",
-    href: "https://linkedin.com",
-  },
-  {
-    label: "YouTube",
-    icon: "/youtube.png",
-    href: "https://youtube.com",
-  },
-  {
-    label: "Pinterest",
-    icon: "/pinterest.png",
-    href: "https://pinterest.com",
-  },
+  { label: "LinkedIn", icon: "/linkedin.png", href: "https://linkedin.com" },
+  { label: "YouTube", icon: "/youtube.png", href: "https://youtube.com" },
+  { label: "Pinterest", icon: "/pinterest.png", href: "https://pinterest.com" },
 ];
 
 export default function Footer() {
   return (
     <footer className="dark bg-background">
-      {/* Main Footer */}
-      <div className="py-16 flex flex-col items-center gap-8 px-4">
-        {/* Logo */}
-        <div className="flex flex-col items-center text-center">
-          <img src="/primarylogo.png" alt="AddLife" className="h-40 mb-2" />
-        </div>
+      <div className="py-16 flex flex-col items-center gap-8 px-6">
+        <img
+          src="/primarylogo.png"
+          alt="AddLife"
+          className="h-24 md:h-32 lg:h-40"
+        />
 
-        {/* Footer Links */}
         <div className="flex flex-wrap justify-center items-center gap-4">
           {footerLinks.map((link, index) => (
             <div key={link.path} className="flex items-center gap-4">
@@ -44,7 +31,6 @@ export default function Footer() {
               >
                 {link.label}
               </Link>
-
               {index < footerLinks.length - 1 && (
                 <span className="text-gray-500">|</span>
               )}
@@ -52,7 +38,6 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Social Links */}
         <div className="flex flex-wrap justify-center items-center gap-4">
           {socialLinks.map((social, index) => (
             <div key={social.label} className="flex items-center gap-4">
@@ -69,10 +54,8 @@ export default function Footer() {
                     className="w-4 h-4 object-contain"
                   />
                 </span>
-
                 <span className="font-semibold text-sm">{social.label}</span>
               </a>
-
               {index < socialLinks.length - 1 && (
                 <span className="text-gray-500">|</span>
               )}
@@ -81,7 +64,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="bg-primary py-3 text-center">
         <p className="text-black text-sm font-medium">
           © Copyright 2026 Addlife Coating System. All rights reserved.

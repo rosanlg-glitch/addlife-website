@@ -5,18 +5,15 @@ export default function WhyAddlife() {
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-20">
-      {/* Header */}
       <div className="text-center mb-10">
         <p className="ph text-primary">{heading}</p>
         <h2 className="h2 text-text">{title}</h2>
       </div>
 
-      {/* Outer Grid Card */}
       <div
-        className="grid grid-cols-4 gap-4 p-4 rounded-xl"
+        className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 rounded-xl"
         style={{ background: "#e8e8e8" }}
       >
-        {/* Left Panel */}
         <div className="bg-white rounded-lg p-6 flex flex-col gap-6">
           <div className="flex gap-4">
             {leftSection.images.map((img, i) => (
@@ -28,7 +25,7 @@ export default function WhyAddlife() {
                   <img
                     src={img.image}
                     alt={img.label}
-                    className="w-full h-24 object-cover rounded"
+                    className="w-full h-20 md:h-24 object-cover rounded"
                   />
                   <span className="absolute bottom-1 right-1 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">
                     {img.tag}
@@ -42,7 +39,7 @@ export default function WhyAddlife() {
             <img
               src={leftSection.specs.image}
               alt="spec"
-              className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+              className="w-14 md:w-16 h-14 md:h-16 rounded-full object-cover flex-shrink-0"
             />
             <div className="grid grid-cols-2 gap-x-4">
               {leftSection.specs.details.map((d, i) => (
@@ -62,36 +59,31 @@ export default function WhyAddlife() {
           </div>
         </div>
 
-        {/* Right side */}
-        <div className="col-span-3 flex flex-col gap-3">
-          {/* Column Headers */}
+        <div className="md:col-span-3 flex flex-col gap-3">
           <div className="grid grid-cols-2 gap-4 px-2">
-            <h3 className="text-base font-bold text-text">
+            <h3 className="text-sm md:text-base font-bold text-text">
               Benefits of AddLife PVD Coating
             </h3>
-            <h3 className="text-base font-bold text-text">Salient Features</h3>
+            <h3 className="text-sm md:text-base font-bold text-text">
+              Salient Features
+            </h3>
           </div>
-
-          {/* Cards Grid */}
           <div className="grid grid-cols-2 gap-3">
-            {/* Benefits */}
             <div className="flex flex-col gap-3">
               {benefits.map((b, i) => (
                 <div
                   key={i}
-                  className="bg-white rounded-lg px-6 py-8 text-sm text-muted text-center"
+                  className="bg-white rounded-lg px-4 md:px-6 py-5 md:py-8 text-xs md:text-sm text-muted text-center"
                 >
                   {b}
                 </div>
               ))}
             </div>
-
-            {/* Features */}
             <div className="flex flex-col gap-3">
               {features.map((f, i) => (
                 <div
                   key={i}
-                  className="bg-white rounded-lg px-6 py-8 text-sm text-muted text-center"
+                  className="bg-white rounded-lg px-4 md:px-6 py-5 md:py-8 text-xs md:text-sm text-muted text-center"
                 >
                   {f}
                 </div>
