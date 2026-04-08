@@ -5,7 +5,7 @@ export default function IndustriesSection() {
     <div
       className="relative py-20 px-6"
       style={{
-        backgroundImage: "url('/industries-bg.jpg')",
+        backgroundImage: "url('/Industries-bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -24,16 +24,16 @@ export default function IndustriesSection() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-4 justify-center">
+        <div className="flex flex-wrap gap-4 items-center justify-center">
           {industries.map((industry) => (
             <div
               key={industry.id}
-              className="bg-white flex flex-col items-start p-4 md:p-6 w-[150px] md:w-[180px] lg:w-[220px]"
+              className="bg-white flex flex-col justify-center items-center p-2 md:p-4 w-[150px] md:w-[180px] lg:w-[220px] rounded-xl"
             >
               <img
                 src={industry.image}
                 alt={industry.label}
-                className="w-14 md:w-20 h-14 md:h-20 object-contain mb-4 md:mb-6"
+                className="w-20 md:w-24 lg:w-28 h-20 md:h-24 lg:h-28 object-contain mb-4"
               />
               <p className="text-gray-700 text-sm md:text-base font-medium">
                 {industry.label}

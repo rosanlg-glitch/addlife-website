@@ -24,7 +24,7 @@ export default function HeroSection() {
           <p
             className="
               text-muted mt-4 mb-6 text-sm md:text-base leading-relaxed
-              max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg
+              max-w-auto
             "
           >
             We maintain this reputation by ensuring that all essential equipment

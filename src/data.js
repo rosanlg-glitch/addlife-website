@@ -116,28 +116,28 @@ export const coatings = [
 export const industries = [
   {
     id: 1,
-    label: "Aerospace Industries",
-    image: "/industries/aerospace.png",
+    label: "Aerospace ",
+    image: "public/Aerospace.png",
   },
   {
     id: 2,
-    label: "Medical Industries",
-    image: "/industries/medical.png",
+    label: "Medical ",
+    image: "public/Medical.png",
   },
   {
     id: 3,
-    label: "Automobile Industries",
-    image: "/industries/automobile.png",
+    label: "Automobile ",
+    image: "public/Automobile.png",
   },
   {
     id: 4,
-    label: "Die & Mould Industries",
-    image: "/industries/die-mould.png",
+    label: "Die & Mould ",
+    image: "public/Die&Mould.png",
   },
   {
     id: 5,
     label: "Electronics (3C)",
-    image: "/industries/electronics.png",
+    image: "public/Electronics.png",
   },
 ];
 export const whyAddlife = {

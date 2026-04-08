@@ -56,7 +56,7 @@ export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   return (
-    <nav className="dark bg-surface text-text border-b border-base relative">
+    <nav className="fixed top-0 md:top-14 left-0 w-full z-40 bg-black text-white shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-14 px-6">
         {/* LOGO */}
         <Link to="/" onClick={() => window.scrollTo(0, 0)}>
@@ -81,8 +81,8 @@ export default function Navbar() {
                   after:transition-all after:duration-300
                   ${
                     isActive
-                      ? "text-text after:w-full"
-                      : "text-muted hover:text-text after:w-0 hover:after:w-full"
+                      ? "text-white after:w-full"
+                      : "text-muted hover:text-white after:w-0 hover:after:w-full"
                   }`
                 }
               >
@@ -107,7 +107,7 @@ export default function Navbar() {
         {/* MOBILE BUTTON */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 text-text"
+          className="md:hidden p-2 text-white"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

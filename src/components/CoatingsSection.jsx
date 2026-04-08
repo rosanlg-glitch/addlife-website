@@ -48,7 +48,7 @@ export default function CoatingsSection() {
           </div>
         ))}
       </div>
-      <div className="flex justify-end gap-3 mt-8">
+      <div className="flex justify-end gap-3 md:mt-8 ">
         <button
           onClick={scrollLeft}
           className="w-10 h-10 rounded-full border border-base flex items-center justify-center hover:bg-primary transition"
